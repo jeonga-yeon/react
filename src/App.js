@@ -49,38 +49,8 @@ function App() {
   return (
     <div>
       <div className="main">
-        <Box
-          title="You"
-          item={userSelect}
-          result={result}
-          border={
-            result === "win"
-              ? "5px solid green"
-              : result === "lose"
-              ? "5px solid red"
-              : "5px solid black"
-          }
-        />
-        <Box
-          title="Computer"
-          item={computerSelect}
-          result={
-            result === ""
-              ? ""
-              : result === "win"
-              ? "lose"
-              : result === "lose"
-              ? "win"
-              : "tie"
-          }
-          border={
-            result === "win"
-              ? "5px solid red"
-              : result === "lose"
-              ? "5px solid green"
-              : "5px solid black"
-          }
-        />
+        <Box title="You" item={userSelect} result={result} />
+        <Box title="Computer" item={computerSelect} result={result} />
       </div>
       <div className="main">
         <button onClick={() => play("scissors")}>가위</button>

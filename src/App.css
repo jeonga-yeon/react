@@ -1,6 +1,22 @@
 .box {
   width: 500px;
   margin: 30px 5px 20px 5px;
+  border: 5px solid black;
+}
+
+.win {
+  border: 5px solid green;
+  color: green;
+}
+
+.lose {
+  border: 5px solid red;
+  color: red;
+}
+
+.tie {
+  border: 5px solid black;
+  color: black;
 }
 
 .item-img {
