@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
-const Box = ({ title, item, result }) => {
+const Box = ({ title, item, result, border }) => {
   return (
-    <div className="box">
+    <div className="box" style={{ border }}>
       <h1>{title}</h1>
       <img className="item-img" src={item && item.img} />
       <h2>{result}</h2>
